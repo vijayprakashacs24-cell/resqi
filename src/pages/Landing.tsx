@@ -27,15 +27,28 @@ const Landing: React.FC = () => {
       {/* HEADER NAVBAR */}
       <header className="border-b border-border/40 bg-background/60 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded bg-brand-cyan/20 border border-brand-cyan flex items-center justify-center">
-              <Code2 size={16} className="text-brand-cyan" />
+          <div className="flex items-center space-x-3">
+            <div className="w-9 h-9 rounded bg-brand-cyan/20 border border-brand-cyan flex items-center justify-center shadow-[0_0_12px_rgba(34,211,238,0.3)]">
+              <Code2 size={18} className="text-brand-cyan" />
             </div>
             <div>
-              <span className="text-md font-mono font-bold tracking-widest text-zinc-100 uppercase">KODEXIS</span>
+              <div className="flex items-center space-x-2">
+                <span className="text-lg font-mono font-extrabold tracking-widest text-zinc-100 uppercase">ResQ<span className="text-brand-cyan">AI</span></span>
+                <span className="px-2 py-0.5 text-[9px] font-mono rounded-full bg-brand-violet/20 border border-brand-violet/40 text-brand-violet font-semibold">MULTIMODAL AI 2026</span>
+              </div>
+              <p className="text-[9px] text-zinc-500 font-mono">Autonomous Technical Assessment & Rescue Intelligence Engine</p>
             </div>
           </div>
-          <div>
+          <div className="flex items-center space-x-3">
+            <a
+              href="https://devpost.com/software/resqai-2cwylm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 rounded border border-brand-violet/40 bg-brand-violet/10 hover:bg-brand-violet/25 text-brand-violet font-mono text-xs transition duration-200 flex items-center space-x-1.5"
+            >
+              <span>Devpost Submission</span>
+              <Sparkles size={12} />
+            </a>
             <button
               onClick={() => navigate('/login')}
               className="px-4 py-1.5 rounded border border-brand-cyan/40 bg-brand-cyan/10 hover:bg-brand-cyan/25 text-brand-cyan font-mono text-xs transition duration-200 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]"
@@ -68,18 +81,18 @@ const Landing: React.FC = () => {
         >
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-brand-cyan/35 bg-brand-cyan/5 text-brand-cyan text-xs font-mono mb-4 shadow-[0_0_15px_rgba(34,211,238,0.05)]">
             <Sparkles size={12} />
-            <span>KODEXIS ASSESSMENT LABORATORY</span>
+            <span>ResQAI ASSESSMENT & RECRUITMENT INTELLIGENCE LABORATORY</span>
           </div>
 
           <h1 className="text-5xl md:text-8xl font-normal tracking-tight text-white leading-none select-none" style={{ fontFamily: "'Junge', serif" }}>
             DON'T JUST <span className="text-transparent" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.45)' }}>COMPILE.</span><br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-zinc-100 to-brand-violet neon-text-cyan font-bold italic">
-              DECODE YOUR TECHNICAL DNA
+              RESCUE & DECODE TECHNICAL DNA
             </span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-zinc-400 text-sm md:text-base leading-relaxed font-sans">
-            Enter the KODEXIS assessment laboratory. Run algorithm drafts in a secure local sandbox under real-time AI interviewer observations, generating multi-factor telemetry reports on your engineering depth.
+            Welcome to <strong className="text-zinc-200">ResQAI</strong> — the autonomous multimodal AI technical interview sandbox. Evaluate candidates with real-time video/audio speech synthesis, live code compilation, Big-O asymptotic analysis, and multi-dimensional performance telemetry.
           </p>
 
           {/* Animated ECG Heartbeat Oscilloscope */}
@@ -161,7 +174,7 @@ const Landing: React.FC = () => {
                 <div className="p-3.5 rounded-2xl rounded-tl-none border border-brand-violet/25 bg-brand-violet/5 space-y-2 shadow-[0_0_15px_rgba(139,92,246,0.03)]">
                   <div className="flex items-center space-x-2">
                     <Brain className="text-brand-violet" size={14} />
-                    <span className="text-xs font-mono text-brand-violet font-bold">KODEXIS AI</span>
+                    <span className="text-xs font-mono text-brand-violet font-bold">ResQAI MULTIMODAL INTERVIEWER</span>
                   </div>
                   <p className="text-xs text-zinc-300 font-sans leading-relaxed">{mockAiMessage}</p>
                 </div>
@@ -259,13 +272,13 @@ const Landing: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* WHY KODEXIS */}
+      {/* WHY ResQAI */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-border/40">
         <div className="text-center space-y-4 mb-16">
-          <span className="text-xs font-mono text-brand-violet uppercase tracking-widest block">THE KODEXIS METHOD</span>
-          <h3 className="text-3xl md:text-5xl font-bold font-mono text-white">Correctness ≠ Interview Readiness</h3>
+          <span className="text-xs font-mono text-brand-violet uppercase tracking-widest block">THE ResQAI MULTIMODAL PARADIGM</span>
+          <h3 className="text-3xl md:text-5xl font-bold font-mono text-white">Correctness ≠ True Engineering Depth</h3>
           <p className="max-w-xl mx-auto text-xs md:text-sm text-zinc-400 font-sans leading-relaxed">
-            Passing test cases is only 30% of an assessment. The engineering logic, complexity awareness, edge-case checking, and communication determine true technical fit.
+            Passing basic unit tests is only 30% of a candidate assessment. ResQAI inspects algorithmic efficiency, Big-O metrics, edge cases, AST static smells, and live candidate speech strategy.
           </p>
         </div>
 
@@ -275,9 +288,9 @@ const Landing: React.FC = () => {
             <div className="w-10 h-10 rounded bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center">
               <Brain className="text-brand-cyan" size={20} />
             </div>
-            <h4 className="text-md font-mono font-semibold text-zinc-200">Algorithmic Complexity</h4>
+            <h4 className="text-md font-mono font-semibold text-zinc-200">Algorithmic Complexity Analysis</h4>
             <p className="text-xs text-zinc-400 leading-relaxed font-sans">
-              We extract Big-O time and space complexities statically and via AI review, benchmarking candidates against the optimal implementation.
+              Static & AI asymptotic analysis of time complexity \( T(n) = O(n \log n) \) and space complexity \( S(n) = O(1) \), benchmarking solutions against optimal standard algorithms.
             </p>
           </div>
           <div className="p-6 glass-panel glass-panel-hover rounded space-y-4 relative overflow-hidden">
@@ -285,9 +298,9 @@ const Landing: React.FC = () => {
             <div className="w-10 h-10 rounded bg-brand-violet/10 border border-brand-violet/20 flex items-center justify-center">
               <ShieldAlert className="text-brand-violet" size={20} />
             </div>
-            <h4 className="text-md font-mono font-semibold text-zinc-200">Defensive Edge Cases</h4>
+            <h4 className="text-md font-mono font-semibold text-zinc-200">Defensive Edge-Case Inspection</h4>
             <p className="text-xs text-zinc-400 leading-relaxed font-sans">
-              We test if code handles blank collections, null values, single element sequences, duplicate bounds, and overflow limits.
+              Dynamic stress testing against blank arrays, extreme integer bounds, null values, single element inputs, and recursion depth limits.
             </p>
           </div>
           <div className="p-6 glass-panel glass-panel-hover rounded space-y-4 relative overflow-hidden">
@@ -295,9 +308,9 @@ const Landing: React.FC = () => {
             <div className="w-10 h-10 rounded bg-brand-emerald/10 border border-brand-emerald/20 flex items-center justify-center">
               <Terminal className="text-brand-emerald" size={20} />
             </div>
-            <h4 className="text-md font-mono font-semibold text-zinc-200">Debugging Resilience</h4>
+            <h4 className="text-md font-mono font-semibold text-zinc-200">Debugging & Code Quality Telemetry</h4>
             <p className="text-xs text-zinc-400 leading-relaxed font-sans">
-              We map code telemetry events, tracking compiler errors, failed submissions, time to resolve, and recovery loops.
+              AST inspection computing cyclomatic complexity index, variable naming legibility, modularity factors, and refactoring recommendations.
             </p>
           </div>
         </div>
@@ -312,10 +325,10 @@ const Landing: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 font-mono">
           {[
-            { num: "01", title: "Configure", desc: "Select DSA difficulty, duration, and runtime language options." },
-            { num: "02", title: "AI Interview", desc: "The AI interviewer initiates conversational scope checks." },
-            { num: "03", title: "IDE Sandbox", desc: "Write, dry-run, and debug code under real sandbox telemetry." },
-            { num: "04", title: "Autopsy Report", desc: "Get detailed, 9-factor scores, Big-O reviews, and practice recommendations." }
+            { num: "01", title: "Configure Session", desc: "Select DSA difficulty, time duration, and target language (Python, Java, JS, C++)." },
+            { num: "02", title: "Multimodal Voice & Chat", desc: "Interact with the Llama 3.1 AI interviewer to explain your strategy." },
+            { num: "03", title: "Monaco Execution Sandbox", desc: "Write, dry-run, and execute code inside the sub-second Piston Docker sandbox." },
+            { num: "04", title: "Autopsy Report", desc: "Review 9-factor scorecard, radar analytics, refactored code snippets, and readiness index." }
           ].map((step, idx) => (
             <div key={idx} className="p-5 glass-panel glass-panel-hover rounded space-y-3 relative overflow-hidden">
               <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-brand-cyan to-transparent" />
@@ -331,17 +344,17 @@ const Landing: React.FC = () => {
       <section className="border-t border-border/40 bg-zinc-950/40 py-24 text-center relative z-10">
         <div className="max-w-4xl mx-auto px-6 space-y-8">
           <h3 className="text-3xl md:text-6xl font-mono font-bold text-white tracking-tight">
-            Ready to prove how you think?
+            Ready to evaluate with <span className="text-brand-cyan">ResQAI</span>?
           </h3>
           <p className="text-zinc-400 text-sm max-w-xl mx-auto font-sans leading-relaxed">
-            Create a profile, load the coding laboratory, and evaluate your programming abilities under real AI-interview constraints.
+            Experience next-generation multimodal technical assessment. Launch live AI mock interviews and decode engineering capability instantly.
           </p>
           <div>
             <button
               onClick={() => navigate('/login')}
               className="flex items-center space-x-2 px-8 py-4 bg-brand-cyan text-background font-bold font-mono text-sm rounded mx-auto hover:bg-brand-cyan/95 transition duration-200 shadow-[0_0_25px_rgba(34,211,238,0.3)] transform hover:scale-[1.02]"
             >
-              <span>Enter the KODEXIS Interview Lab</span>
+              <span>Launch ResQAI Interview Lab</span>
               <ArrowRight size={16} />
             </button>
           </div>
@@ -350,7 +363,7 @@ const Landing: React.FC = () => {
 
       {/* FOOTER */}
       <footer className="border-t border-border/40 bg-background py-8 text-center text-xs font-mono text-zinc-600">
-        <p>© 2026 KODEXIS. AI Technical Interview Sandbox. All rights reserved.</p>
+        <p>© 2026 ResQAI — Multimodal AI Hackathon Project. All rights reserved.</p>
       </footer>
     </div>
   );

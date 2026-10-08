@@ -67,8 +67,8 @@ const DashboardLayout: React.FC<{ children: React.ReactNode }> = ({ children }) 
               <Code size={16} className="text-brand-cyan" />
             </div>
             <div>
-              <h1 className="text-md font-mono font-bold tracking-widest text-zinc-100 uppercase">KODEXIS</h1>
-              <p className="text-[9px] text-zinc-500 font-mono tracking-tight">INTERVIEW LAB V1.0</p>
+              <h1 className="text-md font-mono font-bold tracking-widest text-zinc-100 uppercase">ResQ<span className="text-brand-cyan">AI</span></h1>
+              <p className="text-[9px] text-zinc-500 font-mono tracking-tight">MULTIMODAL AI LAB</p>
             </div>
           </div>
 

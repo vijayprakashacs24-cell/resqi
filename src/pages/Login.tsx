@@ -52,8 +52,8 @@ const Login: React.FC = () => {
           <div className="w-12 h-12 rounded bg-brand-cyan/20 border border-brand-cyan flex items-center justify-center mb-2">
             <Code size={24} className="text-brand-cyan" />
           </div>
-          <h2 className="text-2xl font-bold font-mono tracking-widest text-zinc-100 uppercase">KODEXIS</h2>
-          <p className="text-[10px] text-zinc-500 font-mono tracking-wider">AI INTERVIEW LABORATORY</p>
+          <h2 className="text-2xl font-bold font-mono tracking-widest text-zinc-100 uppercase">ResQ<span className="text-brand-cyan">AI</span></h2>
+          <p className="text-[10px] text-zinc-500 font-mono tracking-wider">MULTIMODAL AI ASSESSMENT LABORATORY</p>
         </div>
 
         {error && (
